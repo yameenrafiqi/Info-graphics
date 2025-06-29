@@ -127,7 +127,7 @@
         const data = await res.json();
 
         // Replace loading with response
-        loadingMsg.textContent = data.text || "No reply received.";
+        loadingMsg.textContent = data.reply || "No reply received.";
       } catch (error) {
         loadingMsg.textContent = "Error connecting to bot.";
         console.error(error);
